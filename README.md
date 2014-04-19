@@ -1,4 +1,4 @@
 ShrimpAnimation
 ===============
 
-extendiong for ShrimpUI support blitting &amp; spritesheets
+extension for ShrimpUI support blitting & spritesheets 
