@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 每个动作对应一个action，有以下属性
+	name：动作名称
+	angle:图像角度
+	color：色差
+	alpha:透明度
+	frame:真序列，包含
+		{
+			uri:图像地址
+			w:宽
+			h:高
+			ox：横向偏移
+			oy: 纵向偏移
+		}
+-->
+<root>
+	<action>
+		<name>idle</name>
+		<angle>0</angle>
+		<color>-1</color>
+		<alpha>1</alpha>
+		<frame>
+			<uri></uri>
+			<w></w>
+			<h></h>
+			<ox></ox>
+			<oy></oy>
+		</frame>
+		<frame>
+			<uri></uri>
+			<w></w>
+			<h></h>
+			<ox></ox>
+			<oy></oy>
+		</frame>
+		<frame>
+			<uri></uri>
+			<w></w>
+			<h></h>
+			<ox></ox>
+			<oy></oy>
+		</frame>
+	</action>
+</root>
