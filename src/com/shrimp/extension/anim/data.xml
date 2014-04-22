@@ -27,7 +27,7 @@
 			<h>2</h>
 			<ox>3</ox>
 			<oy>4</oy>
-			<dur>5</dur>
+			<dur>0.5</dur>
 			<event>6</event>
 		</frame>
 		<frame>
@@ -36,7 +36,7 @@
 			<h>8</h>
 			<ox>9</ox>
 			<oy>10</oy>
-			<dur>11</dur>
+			<dur>0.5</dur>
 			<event>12</event>
 		</frame>
 	</action>
@@ -51,7 +51,7 @@
 			<h>15</h>
 			<ox>16</ox>
 			<oy>17</oy>
-			<dur>18</dur>
+			<dur>0.5</dur>
 			<event>19</event>
 		</frame>
 		<frame>
@@ -60,7 +60,7 @@
 			<h>22</h>
 			<ox>23</ox>
 			<oy>24</oy>
-			<dur>25</dur>
+			<dur>0.5</dur>
 			<event>26</event>
 		</frame>
 	</action>

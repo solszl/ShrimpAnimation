@@ -1,5 +1,7 @@
 package com.shrimp.extension.anim.parser
 {
+	import com.shrimp.extension.anim.data.ActionData;
+
 	public class DataParse
 	{
 		public function DataParse()
@@ -7,7 +9,7 @@ package com.shrimp.extension.anim.parser
 			
 		}
 		
-		public function parse(data:*):void
+		public function parse(data:*):Vector.<ActionData>
 		{
 			var parse:IParser;
 			if(data is XML)
@@ -22,7 +24,7 @@ package com.shrimp.extension.anim.parser
 			{
 				throw new ArgumentError("unsupported file type");
 			}
-			parse.parseData(data);
+			return parse.parseData(data);
 		}
 	}
 }

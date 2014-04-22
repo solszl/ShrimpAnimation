@@ -1,5 +1,7 @@
 package com.shrimp.extension.anim.renderer
 {
+	import com.shrimp.extension.anim.theatre.IAnimatable;
+
 	/**
 	 *	渲染接口 
 	 * @author Sol
@@ -8,5 +10,8 @@ package com.shrimp.extension.anim.renderer
 	public interface IRenderer
 	{
 		function update():void;
+		function set target(actor:IAnimatable):void;
+		function get target():IAnimatable;
+		function dispose():void;
 	}
 }

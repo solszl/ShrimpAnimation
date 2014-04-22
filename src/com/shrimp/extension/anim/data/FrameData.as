@@ -6,7 +6,7 @@ package com.shrimp.extension.anim.data
 	 * @author Sol
 	 * @since 2014-04-21
 	 */
-	internal class FrameData
+	public class FrameData
 	{
 		public function FrameData()
 		{
@@ -17,7 +17,25 @@ package com.shrimp.extension.anim.data
 		private var _height:Number;
 		private var _ox:Number;
 		private var _oy:Number;
+		private var _duration:Number;
+		private var _event:String;
 
+		/**	一次性设置宽高
+		 * 此时， 你仍然可以使用两次set 函数，width，height来实现此功能*/
+		public function setSize(w:Number, h:Number):void
+		{
+			width=w;
+			height=h;
+		}
+		
+		/**	一次性设置对于基准点的偏移
+		 * 	此时， 你仍然可以使用两次set 函数，ox,oy来实现此功能*/
+		public function setOffset(offsetX:Number, offsetY:Number):void
+		{
+			ox=offsetX;
+			oy=offsetY;
+		}
+		
 		/**	图片路径*/
 		public function get uri():String
 		{
@@ -73,20 +91,28 @@ package com.shrimp.extension.anim.data
 			_oy=value;
 		}
 
-		/**	一次性设置宽高
-		 * 此时， 你仍然可以使用两次set 函数，width，height来实现此功能*/
-		public function setSize(w:Number, h:Number):void
+		/**	帧持续时间*/
+		public function get duration():Number
 		{
-			width=w;
-			height=h;
+			return _duration;
 		}
 
-		/**	一次性设置对于基准点的偏移
-		 * 	此时， 你仍然可以使用两次set 函数，ox,oy来实现此功能*/
-		public function setOffset(offsetX:Number, offsetY:Number):void
+		public function set duration(value:Number):void
 		{
-			ox=offsetX;
-			oy=offsetY;
+			_duration = value;
 		}
+
+		/**	要派发的事件名称*/
+		public function get event():String
+		{
+			return _event;
+		}
+
+		public function set event(value:String):void
+		{
+			_event = value;
+		}
+
+
 	}
 }
