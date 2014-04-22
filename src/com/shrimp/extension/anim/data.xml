@@ -11,6 +11,8 @@
 			h:高
 			ox：横向偏移
 			oy: 纵向偏移
+			dur: 持续时间
+			event: 抛出去的事件
 		}
 -->
 <root>
@@ -20,25 +22,46 @@
 		<color>-1</color>
 		<alpha>1</alpha>
 		<frame>
-			<uri></uri>
-			<w></w>
-			<h></h>
-			<ox></ox>
-			<oy></oy>
+			<uri>1.png</uri>
+			<w>1</w>
+			<h>2</h>
+			<ox>3</ox>
+			<oy>4</oy>
+			<dur>5</dur>
+			<event>6</event>
 		</frame>
 		<frame>
-			<uri></uri>
-			<w></w>
-			<h></h>
-			<ox></ox>
-			<oy></oy>
+			<uri>2.png</uri>
+			<w>7</w>
+			<h>8</h>
+			<ox>9</ox>
+			<oy>10</oy>
+			<dur>11</dur>
+			<event>12</event>
+		</frame>
+	</action>
+	<action>
+		<name>walk</name>
+		<angle>0</angle>
+		<color>-1</color>
+		<alpha>1</alpha>
+		<frame>
+			<uri>13</uri>
+			<w>14</w>
+			<h>15</h>
+			<ox>16</ox>
+			<oy>17</oy>
+			<dur>18</dur>
+			<event>19</event>
 		</frame>
 		<frame>
-			<uri></uri>
-			<w></w>
-			<h></h>
-			<ox></ox>
-			<oy></oy>
+			<uri>20</uri>
+			<w>21</w>
+			<h>22</h>
+			<ox>23</ox>
+			<oy>24</oy>
+			<dur>25</dur>
+			<event>26</event>
 		</frame>
 	</action>
 </root>

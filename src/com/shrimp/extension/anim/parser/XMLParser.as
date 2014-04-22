@@ -1,5 +1,7 @@
 package com.shrimp.extension.anim.parser
 {
+	import flash.utils.ByteArray;
+
 	internal class XMLParser implements IParser
 	{
 		public function XMLParser()
@@ -13,6 +15,7 @@ package com.shrimp.extension.anim.parser
 				throw new ArgumentError("raw data is not instanceof XML");
 			}
 			
+			trace(rawData);
 		}
 	}
 }

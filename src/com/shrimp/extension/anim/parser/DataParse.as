@@ -6,5 +6,23 @@ package com.shrimp.extension.anim.parser
 		{
 			
 		}
+		
+		public function parse(data:*):void
+		{
+			var parse:IParser;
+			if(data is XML)
+			{
+				parse = new XMLParser();
+			}
+			else if(data is JSON)
+			{
+				parse = new JSONParser();
+			}
+			else
+			{
+				throw new ArgumentError("unsupported file type");
+			}
+			parse.parseData(data);
+		}
 	}
 }
