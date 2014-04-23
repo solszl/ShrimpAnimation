@@ -82,6 +82,11 @@ package com.shrimp.extension.anim.theatre
 			play();
 		}
 		
+		public function get actor():Actor
+		{
+			return _actor;
+		}
+		
 		public function play(name:String="idle",reset:Boolean=false,frame:int=0):void
 		{
 			if(currentData && currentData.name ==name)

@@ -1,6 +1,8 @@
 package com.shrimp.extension.anim.renderer
 {
 	import com.shrimp.extension.anim.theatre.IAnimatable;
+	
+	import flash.display.Sprite;
 
 	/**
 	 *	位图切换渲染器
@@ -8,7 +10,7 @@ package com.shrimp.extension.anim.renderer
 	 * @author Sol
 	 * 
 	 */	
-	public class BitmapsRenderer implements IRenderer
+	public class BitmapsRenderer extends Sprite implements IRenderer
 	{
 		public function BitmapsRenderer()
 		{

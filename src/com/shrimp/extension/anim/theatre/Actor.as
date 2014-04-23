@@ -8,7 +8,7 @@ package com.shrimp.extension.anim.theatre
 	 * @author Sol
 	 *
 	 */
-	internal class Actor implements IAnimatable
+	public class Actor implements IAnimatable
 	{
 		/**	剧本*/
 		private var _frames:Vector.<FrameData>;
@@ -27,8 +27,11 @@ package com.shrimp.extension.anim.theatre
 
 		public function advanceTime(elapsed:Number):void
 		{
+			if(frame == null)
+				return;
+			
 			_elapsed+=elapsed;
-
+			trace(_elapsed);
 			if (_elapsed > frame.duration)
 			{
 				_elapsed-=frame.duration;
@@ -37,7 +40,7 @@ package com.shrimp.extension.anim.theatre
 				if (frameIndex >= _frames.length)
 					frameIndex=0;
 				frame=_frames[frameIndex];
-
+				trace("change frame");
 				this.onChangeFrame();
 			}
 		}
@@ -53,6 +56,11 @@ package com.shrimp.extension.anim.theatre
 			frameIndex = f;
 			_elapsed = 0;
 			frame = _frames[frameIndex];
+		}
+		
+		public function getFrame():FrameData
+		{
+			return frame;
 		}
 	}
 }
